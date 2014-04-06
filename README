@@ -1,0 +1,4 @@
+This is a minimal node app based on express that users can register on and make posts that are displayed on the root page.
+
+The app setup requires the database configuration in the app.js file and a predefined mysql table called 'simple_posts' in the database with the model [id, user, title, post]
+

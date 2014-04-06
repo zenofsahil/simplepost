@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1
+    |New User Registration
+  form(name="User-Registration", action="/register", method="post")
+    |Enter Email:
+    input(type="text", name = "email")
+    br
+    |Enter Username:
+    input(type="text", name = "user")
+    br
+    |Enter Password:
+    input(type="password", name = "password")
+    br
+    |Confirm Pasword:
+    input(type="password", name = "confirm_password")
+    br
+    input(type="submit", name="submit")
+
+

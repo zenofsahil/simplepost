@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style2.css')
+  body
+    div.container
+      div.head
+        h1
+          |Simple Post
+        hr
+        div.menu4
+          a(href="/")
+            span
+              |Posts
+          a(href="/post")
+            span
+              |Make Post
+          a(href="/register")
+            span
+              |Register
+        div.menu4sub
+      br
+      br
+      block content

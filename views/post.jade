@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  div.container
+    form(name="makepost", action="/post", method="post")
+      br
+      label(for="title") Title: 
+        input(type="text", name="title")
+      br
+      |Post
+      br
+      textarea(name="post_body", rows="20", cols="80")
+      br
+      input(type="submit", name="submit")
+

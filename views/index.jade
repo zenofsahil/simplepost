@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  div.posts
+    - for(var i=0; i< posts.length; i++){
+        div#post
+          span#title
+            =posts[i][1]
+            |, by 
+          span#user
+            b
+              =posts[i][0]
+          hr
+          div#post_body
+            =posts[i][2]
+          hr
+          hr
+          br
+          br
+    - }
+
